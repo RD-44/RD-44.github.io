@@ -1,0 +1,71 @@
+html, body{
+	font-family: Roboto, sans-serif;
+	scroll-behavior: smooth;
+	padding: 0;
+  	margin: 0;
+  	color:  white;
+  	background-color: black;
+  	text-align: center;
+}
+
+h1{
+	font-weight: lighter;
+}
+h2{
+	font-weight: normal;
+	font-size: 25px;
+}
+p{
+	font-size: 20px;
+}
+
+#nBar{
+	background-color: black;
+	text-align: center;
+	padding-top:10px;
+  	margin: 0;
+  	transition-property: position;
+  	transition:1s;
+}
+#nBar hr{
+	border-color: #4d8cf5;
+	border-width: 1px;
+	width: 50%;
+}
+.nLinks a{
+	font-weight: light;
+	position: relative; left: -32px;
+	padding-left: 20px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+.nLinks a:hover{
+	color: #4d8cf5;
+	transition: 0.4s;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.shift{
+	padding-top:60px;
+}
+
+#main{
+	height: 10%;
+}
+
+.topic{
+	text-align: left;
+	padding-left: 100px;
+	display: block;
+}
+.vid{
+	width: 800px;
+	height: 550px;
+}
+
+
+
