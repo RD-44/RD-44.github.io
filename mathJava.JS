@@ -13,3 +13,21 @@ function shift(){
     	main.classList.remove("shift")
   	}
 }
+
+// start video at frame 0
+var time = 0;
+// lower numbers = faster playback
+playbackConst = 200;
+// select video element         
+vid = document.getElementById("v0"); 
+debug = document.getElementById("test"); 
+
+// Use requestAnimationFrame for smooth playback
+function scrollPlay(){ 
+  debug.innerHTML = (window.pageYOffset);
+  var time  = (window.pageYOffset/playbackConst);
+  vid.currentTime  = time;
+  window.requestAnimationFrame(scrollPlay);
+}
+
+window.requestAnimationFrame(scrollPlay);
