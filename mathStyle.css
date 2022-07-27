@@ -12,22 +12,22 @@ body{
 }
 h1{
 	font-weight: lighter;
+	font-size: 35px;
 }
 h2{
 	font-weight: normal;
-	font-size: 25px;
+	font-size: 30px;
 }
 p{
-	font-size: 20px;
+	font-size: 25px;
 }
 
 #nBar{
-	background-color: black;
+	z-index:10;
+	background-image: linear-gradient(to top, rgba(0,0,0,0.3), rgba(0,0,0,1)); /*Black gradient upwwards*/
 	text-align: center;
 	padding-top:10px;
   margin: 0;
-  transition-property: position;
-  transition:1s;
 }
 #nBar hr{
 	border-color: #4d8cf5;
@@ -52,21 +52,23 @@ p{
   width: 100%;
 }
 .shift{
-	padding-top:60px;
+	padding-top:65px;
+	padding-bottom:20px;
 }
 
 #main{
 	height: 3%;
+	animation-name: myfirst;
+	animation-duration: 0.5s;
+}
+@keyframes myfirst {
+  0%   {transform: rotate(90deg);}
 }
 
+
 .topic{
-	position: fixed;
+	position:  relative;
 	text-align: left;
 	padding-left: 40px;
 	display: block;
-}
-
-canvas {
-  max-height: 100vh;
-  max-width: 100vw;
 }
