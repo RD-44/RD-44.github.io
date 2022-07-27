@@ -19,6 +19,7 @@ function checkScroll() {
     var fraction = 0.95; // Play when 80% of the player is visible.
     for(var i = 0; i < videos.length; i++) {
         var video = videos[i];
+        var isPlaying = video.currentTime > 0 && !video.paused && !video.ended && video.readyState > video.HAVE_CURRENT_DATA;
         var y = video.offsetTop, h = video.offsetHeight, b = y + h, //bottom UNDERSTAND THIS AND REFINE.
             visibleY, visible;
             //Find out what each line does
@@ -26,12 +27,12 @@ function checkScroll() {
             visible = visibleY / h;
             //window.pageYOffset >  video.offsetTop && window.pageYOffset < video.offsetTop - video.innerHeight
             if (visible > fraction) {
-              if(video.currentTime <= 0){  //Nested if statement to account for video already started and in view
+              if(!isPlaying){  //Nested if statement to account for video already started and in view
                 video.play();
               }
             }else{
               video.currentTime = 0;
-              video.pause();
+              if(isPlaying){video.pause();}
             }
             //Try make video reset when scrolled out of view.
     }
