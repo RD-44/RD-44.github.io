@@ -7,7 +7,9 @@ html, body{
   background-color:black;
   text-align:center;
 }
-
+body{
+	height: 500vh;
+}
 h1{
 	font-weight: lighter;
 }
@@ -54,18 +56,17 @@ p{
 }
 
 #main{
-	height: 10%;
+	height: 3%;
 }
 
 .topic{
+	position: fixed;
 	text-align: left;
 	padding-left: 40px;
 	display: block;
 }
-.vid{
-	width: 800px;
-	height: 550px;
+
+canvas {
+  max-height: 100vh;
+  max-width: 100vw;
 }
-
-
-
