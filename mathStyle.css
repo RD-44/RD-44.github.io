@@ -8,6 +8,8 @@ html, body{
   text-align:center;
 }
 body{
+	animation-name: fadeIn;
+	animation-duration: 0.8s;
 	height: 500vh;
 }
 h1{
@@ -57,16 +59,17 @@ p{
 }
 
 #main{
-	height: 3%;
-	animation-name: myfirst;
-	animation-duration: 0.5s;
+	height: 60px;
 }
-@keyframes myfirst {
-  0%   {transform: rotate(90deg);}
+@keyframes fadeIn {
+  from {opacity: 0;}
+ 	to {opacity: 1;}
 }
 
 
 .topic{
+	animation-name: fadeIn;
+	animation-duration: 0.8s;
 	position:  relative;
 	text-align: left;
 	padding-left: 40px;

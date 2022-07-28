@@ -3,7 +3,6 @@ window.onscroll = function() {shift()};
 var navbar = document.getElementById("nBar");
 var main = document.getElementById("main");
 var sticky = navbar.offsetTop+1;
-
 function shift(){
 	if (window.pageYOffset >= sticky) {
     	navbar.classList.add("sticky")
@@ -15,28 +14,20 @@ function shift(){
 }
 
 var videos = document.getElementsByTagName("video");
+var hasPlayed = Array(videos.length).fill(false)
 function checkScroll() {
-    var fraction = 0.95; // Play when 80% of the player is visible.
-    for(var i = 0; i < videos.length; i++) {
-        var video = videos[i];
-        var isPlaying = video.currentTime > 0 && !video.paused && !video.ended && video.readyState > video.HAVE_CURRENT_DATA;
-        var y = video.offsetTop, h = video.offsetHeight, b = y + h, //bottom UNDERSTAND THIS AND REFINE.
-            visibleY, visible;
-            //Find out what each line does
-            visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
-            visible = visibleY / h;
-            //window.pageYOffset >  video.offsetTop && window.pageYOffset < video.offsetTop - video.innerHeight
-            if (visible > fraction) {
-              if(!isPlaying){  //Nested if statement to account for video already started and in view
-                video.play();
-              }
-            }else{
-              video.currentTime = 0;
-              if(isPlaying){video.pause();}
-            }
-            //Try make video reset when scrolled out of view.
+  var fraction = 0.95; // Play when 80% of the player is visible.
+  for(var i = 0; i < videos.length; i++) {
+    var video = videos[i];
+    var isPlaying = video.currentTime > 0 && !video.paused && !video.ended && video.readyState > video.HAVE_CURRENT_DATA;
+    bounding = video.getBoundingClientRect();
+    if (bounding.top < 500 && !isPlaying && !hasPlayed[i]) { //"visible > fraction"
+      video.play();
+      hasPlayed[i]=true
     }
+  }
 }
+checkScroll();
 window.addEventListener('scroll', checkScroll, false);
 window.addEventListener('resize', checkScroll, false);
 
