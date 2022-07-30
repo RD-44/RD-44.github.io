@@ -21,7 +21,7 @@ function checkScroll() {
     var video = videos[i];
     var isPlaying = video.currentTime > 0 && !video.paused && !video.ended && video.readyState > video.HAVE_CURRENT_DATA;
     bounding = video.getBoundingClientRect();
-    if (bounding.top < 500 && !isPlaying && !hasPlayed[i]) { //"visible > fraction"
+    if (bounding.top < 500 && !isPlaying && !hasPlayed[i]) { 
       video.play();
       hasPlayed[i]=true
     }

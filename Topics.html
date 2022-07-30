@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Maths</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="mathStyle.css" rel="stylesheet" type = "text/css"> <!-- Link to my stylesheet -->
+</head>
+
+<body>
+
+	<div id = "nBar">
+		<ul class="nLinks">
+			<a href="index.html">Home</a>
+			<a href="#Contact">Contact</a>
+			<a href="#About">About</a>
+		</ul>
+		<hr>
+	</div>
+
+	<div id = "main">
+		<h1>Topics</h1>
+	</div>
+
+	<div class = "topic">
+		<h2>Integration by Substitution</h2>
+		<p>Consider the following integral:</p>
+		<img width="960" height="540" src = "integralBySub\integralPic.png">
+		<p>We could expand the binomial and integrate, however we can consider a simple graph transformation, shifting the function one unit in the negative x direction: </p>
+		<video width="960" height="540" controls muted>
+  			<source src="integralBySub\integralsub.mp4" type="video/mp4">
+		</video>
+		<p>Here's a graphical view of what just happened, showing that the area we are finding hasn't changed:</p>
+		<video width="960" height="540" controls muted>
+  			<source src="integralBySub\integralGraph.mp4" type="video/mp4">
+		</video>
+		<p>Now we can evaluate the integral, quite easily:</p>
+		<video width="960" height="540" controls muted>
+  			<source src="integralBySub\integralComputed.mp4" type="video/mp4">
+		</video>
+		<p>What we just did may not seem like much, but this is exactly how integration by substition works. The goal of this technique is to transform the function we are trying to integrate to end up with a new function which is (hopefully) easier to integrate.<p>
+	</div>	
+	<script type="text/javascript" src = "mathJava.JS"></script>
+</body>
+
+</html>

@@ -8,7 +8,7 @@ html, body{
   text-align:center;
 }
 body{
-	animation-name: fadeIn;
+	sanimation-name: fadeIn;
 	animation-duration: 0.8s;
 	height: 500vh;
 }
@@ -37,6 +37,7 @@ p{
 	width: 50%;
 }
 .nLinks a{
+	font-size:  20px;
 	font-weight: light;
 	position: relative; left: -32px;
 	padding-left: 20px;
