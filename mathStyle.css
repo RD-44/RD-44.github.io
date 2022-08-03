@@ -8,8 +8,6 @@ html, body{
   text-align:center;
 }
 body{
-	sanimation-name: fadeIn;
-	animation-duration: 0.8s;
 	height: 500vh;
 }
 h1{
@@ -68,15 +66,8 @@ p{
 #main{
 	height: 60px;
 }
-@keyframes fadeIn {
-  from {opacity: 0;}
- 	to {opacity: 1;}
-}
-
 
 .topic{
-	animation-name: fadeIn;
-	animation-duration: 0.8s;
 	position:  relative;
 	text-align: left;
 	padding-left: 40px;
@@ -87,3 +78,11 @@ p{
 	border-color: white;
 	border-width: 1px;
 	width: 25%;
+}
+.topic a{
+	font-weight: light;
+	position: relative; left: -32px;
+	padding-left: 20px;
+	text-align: center;
+	color: white;
+}
