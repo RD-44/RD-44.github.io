@@ -1,5 +1,3 @@
-window.onscroll = function() {shift()};
-
 var navbar = document.getElementById("nBar");
 var main = document.getElementById("main");
 var sticky = navbar.offsetTop+1;
@@ -12,6 +10,7 @@ function shift(){
     	main.classList.remove("shift")
   	}
 }
+window.onscroll = function() {shift()};
 
 var videos = document.getElementsByTagName("video");
 var hasPlayed = Array(videos.length).fill(false)
@@ -21,9 +20,9 @@ function checkScroll() {
     var video = videos[i];
     var isPlaying = video.currentTime > 0 && !video.paused && !video.ended && video.readyState > video.HAVE_CURRENT_DATA;
     bounding = video.getBoundingClientRect();
-    if (bounding.top < 500 && !isPlaying && !hasPlayed[i]) { 
+    if (bounding.top < 500 && bounding.top > 400 && !isPlaying && !hasPlayed[i]) { 
       video.play();
-      hasPlayed[i]=true
+      hasPlayed[i]=true;
     }
   }
 }

@@ -1,6 +1,6 @@
 from manim import *
 
-class integral(Scene):
+class integralIntro(Scene):
     def construct(self):
         eq1 = MathTex(r" \int_{0}^{1} x(x-1)^4 \,dx")
         eq1.set_height(3)
@@ -30,7 +30,6 @@ class integral(Scene):
         self.wait(1)
         self.play(Transform(eq1,eq6), run_time = 1)
         self.wait(1)
-        print("Ok")
 
 
 class integralPic(Scene):
@@ -59,3 +58,42 @@ class integralGraph(Scene):
         self.wait(2)
         self.play(Transform(graph, graph1), Transform(eq, eq1), Transform(area, area1),run_time = 1)
         self.wait(2)  
+
+class integralMethod(Scene):
+    def construct(self):
+        eq = MathTex(r" \int_{0}^{1} u^4(u+1) \,dx")
+        sub = MathTex(r"u=x-1")
+        sub.shift(2*DOWN)
+        eq.shift(2*UP)
+        eq.set_height(3)
+        sub.set_height(1)
+        self.add(eq)
+        self.add(sub)
+
+class integrandChange(Scene):
+    def construct(self):
+        eq = MathTex(r" x(x-1)^4 ")
+        subbedEq = MathTex(r"(u+1)u^4")
+        eq.set_height(3)
+        subbedEq.set_height(3)
+        self.add(eq)
+        self.wait(1)
+        self.play(Transform(eq, subbedEq), run_time=1)
+        self.wait(2)
+
+class derivativeSub(Scene):
+    def construct(self):
+        eq = MathTex(r" u = x + 1")
+        diffedEq = MathTex(r" \frac{du}{dx} = 1")
+        dx = MathTex(r"dx = du")
+        dx.set_height(2)
+        eq.set_height(2)
+        diffedEq.set_height(3)
+        self.add(eq)
+        self.wait(1)
+        self.play(Transform(eq, diffedEq), run_time=1)
+        self.wait(1.5)
+        self.play(Transform(eq, dx), run_time=1)
+        self.wait(1)
+
+

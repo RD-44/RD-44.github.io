@@ -26,6 +26,8 @@
 
 	<div class = "topic">
 		<h2>Integration by Substitution</h2>
+		<hr>
+		<h3>Intro</h3>
 		<p>Consider the following integral:</p>
 		<img width="960" height="540" src = "integralBySub\integralPic.png">
 		<p>We could expand the binomial and integrate. However, we can consider a simple graph transformation, shifting the function one unit in the negative x direction (replacing x with x+1 in the integrand and shifting the limits): </p>
@@ -42,6 +44,24 @@
   			<source src="integralBySub\integralComputed.mp4" type="video/mp4">
 		</video>
 		<p>What we just did may not seem like much, but this is exactly how integration by substition works. The goal of this technique is to transform the function we are trying to integrate to end up with a new function which is (hopefully) easier to integrate.<p>
+		<h3>The formal method</h3>
+		<p>Now we'll go through the same integral but using the formal method of substitution:<p>
+		<img width="960" height="540" src = "integralBySub\integralUsub.png">
+		<p>What's different now is that we introduce a new variable (u) rather than just replacing the x with x+1. This helps distuinguish between the old and new integral and also helps for more advanced substitutions. We use this substitution in particular because it allows us to replace the pesky binomial x-1 with a single variable to avoid binomial expansion. 
+		<video width="960" height="540" controls muted>
+  			<source src="integralBySub\integrandChange.mp4" type="video/mp4">
+		</video>
+		<p>Expressing the integrand in terms of u looks promising. But we cannot just replace the old integrand with this new one, as there are two problems:</p>
+		<img width="960" height="540" src = "integralBySub\integralproblem.png">
+		<p>Our limits haven't been adjusted and we still integrating with respect to x when our integrand is purely in terms of u. However, note that the limits correspond to when x = 0 and x = 1 respectively. We want our limits to be in the u world as well, and thankfully we have an equation relating u with x : u = x - 1. Subbing in x = 0 and x = 1 gives our new limits of u = -1 and u = 0 respectively.</p>
+		<br>
+		<p>Just one more step! We ideally want a du instead of dx, so how can we rigorously find a relationship between du and dx? We use the fact that dx is just an infinitely small change in x. How do we relate a small change in u to a small change in x? We use differentiation:</p>
+		<video width="960" height="540" controls muted>
+  			<source src="integralBySub\derivativeSub.mp4" type="video/mp4">
+		</video>
+		<p>Subbing in the dx for du gives us the integral we want.</p>
+		<p>This process is powerful as it allows us to use much more complex substitions without having to visualise a graph transformation, although this does help build intuition.</p><br>
+		<p>One thing to point out is that we essentially treated du/dx as a fraction to arrive at the result du = dx. Does this mean that the derivative <em>is</em> a fraction?</p>
 	</div>	
 	<script type="text/javascript" src = "mathJava.JS"></script>
 </body>

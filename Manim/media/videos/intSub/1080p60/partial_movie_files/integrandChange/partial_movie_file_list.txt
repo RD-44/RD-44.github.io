@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Code/Git/RD-44.github.io/Manim/media/videos/intSub/1080p60/partial_movie_files/integrandChange/450974505_345352296_865158185.mp4'
+file 'file:C:/Code/Git/RD-44.github.io/Manim/media/videos/intSub/1080p60/partial_movie_files/integrandChange/34786186_1022210568_2852185392.mp4'
+file 'file:C:/Code/Git/RD-44.github.io/Manim/media/videos/intSub/1080p60/partial_movie_files/integrandChange/34786186_125286499_2018658449.mp4'
