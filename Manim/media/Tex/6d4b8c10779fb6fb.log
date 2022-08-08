@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=latex 2022.6.28)  5 AUG 2022 11:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=latex 2022.6.28)  5 AUG 2022 11:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./media/Tex/908974cb43f3a7db.tex
-(media/Tex/908974cb43f3a7db.tex
+**./media/Tex/6d4b8c10779fb6fb.tex
+(media/Tex/6d4b8c10779fb6fb.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24>
 (C:\Users\adhav\AppData\Local\Programs\MiKTeX\tex/latex/standalone\standalone.c
@@ -158,8 +158,9 @@ File: l3backend-dvips.def 2022-02-07 L3 backend support: dvips
 \g__pdf_backend_annotation_int=\count278
 \g__pdf_backend_link_int=\count279
 \g__pdf_backend_link_sf_int=\count280
-) (C:\Code\Git\RD-44.github.io\Manim\media\Tex\908974cb43f3a7db.aux)
-\openout1 = `908974cb43f3a7db.aux'.
+)
+No file 6d4b8c10779fb6fb.aux.
+\openout1 = `6d4b8c10779fb6fb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
@@ -176,18 +177,16 @@ LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 Preview: Fontsize 10pt
-! Missing $ inserted.
-<inserted text> 
-                $
-l.10 \int
-         _{0}^{1} x(x-1)^4 \,dx 
+Preview: Tightpage 0 0 0 0
+[1] (C:\Code\Git\RD-44.github.io\Manim\media\Tex\6d4b8c10779fb6fb.aux) ) 
 Here is how much of TeX's memory you used:
- 3303 strings out of 478583
- 54586 string characters out of 2844370
+ 3308 strings out of 478583
+ 54682 string characters out of 2844370
  353505 words of memory out of 3000000
- 21494 multiletter control sequences out of 15000+600000
+ 21498 multiletter control sequences out of 15000+600000
  469259 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,2n,71p,244b,104s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-No pages of output.
+Output written on C:\Code\Git\RD-44.github.io\Manim\media\Tex\6d4b8c10779fb6fb.
+dvi (1 page, 1608 bytes).
