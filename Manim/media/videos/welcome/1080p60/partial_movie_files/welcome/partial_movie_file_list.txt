@@ -1,0 +1,7 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Code/Git/RD-44.github.io/Manim/media/videos/welcome/1080p60/partial_movie_files/welcome/450974505_3162612497_223132457.mp4'
+file 'file:C:/Code/Git/RD-44.github.io/Manim/media/videos/welcome/1080p60/partial_movie_files/welcome/34786186_2358420384_260293184.mp4'
+file 'file:C:/Code/Git/RD-44.github.io/Manim/media/videos/welcome/1080p60/partial_movie_files/welcome/34786186_1552380087_1684625434.mp4'
+file 'file:C:/Code/Git/RD-44.github.io/Manim/media/videos/welcome/1080p60/partial_movie_files/welcome/34786186_2358420384_3820023946.mp4'
+file 'file:C:/Code/Git/RD-44.github.io/Manim/media/videos/welcome/1080p60/partial_movie_files/welcome/34786186_3802535974_905597944.mp4'
+file 'file:C:/Code/Git/RD-44.github.io/Manim/media/videos/welcome/1080p60/partial_movie_files/welcome/34786186_2358420384_2170703366.mp4'

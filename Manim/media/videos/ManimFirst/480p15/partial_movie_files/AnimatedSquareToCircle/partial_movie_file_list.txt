@@ -1,6 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Code/media/videos/ManimFirst/480p15/partial_movie_files/AnimatedSquareToCircle/3163782288_2870288777_3932134167.mp4'
-file 'file:C:/Code/media/videos/ManimFirst/480p15/partial_movie_files/AnimatedSquareToCircle/2201830969_4025180550_2820159010.mp4'
-file 'file:C:/Code/media/videos/ManimFirst/480p15/partial_movie_files/AnimatedSquareToCircle/2201830969_2143656938_489229737.mp4'
-file 'file:C:/Code/media/videos/ManimFirst/480p15/partial_movie_files/AnimatedSquareToCircle/2201830969_2712254362_489229737.mp4'
-file 'file:C:/Code/media/videos/ManimFirst/480p15/partial_movie_files/AnimatedSquareToCircle/2201830969_3711822456_3982753561.mp4'
