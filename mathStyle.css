@@ -90,7 +90,9 @@ a:hover{
 
 
 #breakdown{ /*div container of drop down*/
-	position:  relative;
+	position:  relative; left: 50%; /*Centre DIV*/
+	margin-left: -125px;
+	width: 250px;
 }
 
 .dropbtn{ /* Class for topic list button */
@@ -98,30 +100,50 @@ a:hover{
 	width: 250px;
 	height:50px;
 	position: relative;
-	background-color: grey;
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+	background-color: black;
 	color: white;
 	font-family: 'STIX Two Text', serif;
 }	
 
-#breakdown:hover .topicDrop{ /*When hover on div, make dropdown of topics visible*/
+#breakdown:hover .topicDrop{ /*When hover on div, make dropdown of topics visible and slide down*/
 	display:  block;
+	transform-origin: top center;
+	animation: growDown 200ms ease-in-out forwards;
+	animation-name: growDown;
 }
 #breakdown:hover .dropbtn{ /*When hover on div, change topic list button colour*/
+	transition: 0.4s;
 	background-color: #4d8cf5;
 }
 .topicDrop a:hover{ /* Hover on topic name changes its background colour*/
+	transition: 0.4s;
 	background-color: #4d8cf5;
 }
 
 .topicDrop{ /* Class for topics */
-	background-color: grey;
+	background-color: black;
 	display:  none;
 	color: white;
-	width:  250px;
+	width: 250px;
 	margin: auto;
 	font-family: 'STIX Two Text', serif;
 }	
+@keyframes growDown { /* Animation for drop down */
+  0% {
+      transform: scaleY(0)
+  }
+  100% {
+      transform: scaleY(1)
+  }
+}
+
 .topicDrop a{ /* Class for topic links */
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
 	display: block;
 	font-size:  20px;
 	font-weight: light;
