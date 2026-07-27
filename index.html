@@ -1,33 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>Maths</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-	<link href="mathStyle.css" rel="stylesheet" type = "text/css"> 
-	<!-- Link to my stylesheet --><!-- Link to my stylesheet -->
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8250102780835705"
-     crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RD-44 | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8250102780835705"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<div id = "nBar">
-		<ul class="nLinks">
-			<a href="Topics.html">Topics</a>
-		</ul>
-		<hr>
-	</div>
-	<div id = "main">
-		<h1>Welcome</h1>
-		<video width="960" height="540" controls muted>
-			<source src="Manim\media\videos\welcome\1080p60\welcome.mp4" type="video/mp4">
-		</video>
-	</div>
-	<script type="text/javascript" src = "mathJava.JS"></script>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8250102780835705"
-     crossorigin="anonymous"></script>
+
+  <div class="grid-bg"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">RD-<span>44</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <p class="hero-greeting">Hi, my name is</p>
+    <h1 class="hero-name">Ardi</h1>
+    <p class="hero-tagline">I build <span class="typed" id="typed"></span><span class="typed-cursor">|</span></p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+      <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="reveal">
+      <p class="section-label">About Me</p>
+      <h2 class="section-title">A bit about myself</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-image reveal reveal-delay-1">
+        <img src="assets/profile.jpeg" alt="Profile photo">
+      </div>
+      <div class="about-text reveal reveal-delay-2">
+        <p>I'm a developer and creator with a passion for building things that live on the internet. I enjoy working across the full stack, from crafting intuitive interfaces to designing robust backends.</p>
+        <p>When I'm not coding, you'll find me exploring new technologies, working on creative side projects, or diving into math and science topics.</p>
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-count="3">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="2">0</div>
+            <div class="stat-label">Languages</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="1">0</div>
+            <div class="stat-label">Years Coding</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="reveal">
+      <p class="section-label">Projects</p>
+      <h2 class="section-title">Things I've built</h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4d8cf5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        </div>
+        <h3>Maths Intuition</h3>
+        <p>A maths education website with 3Blue1Brown-style Manim animations that build intuition for calculus topics like integration by substitution and parts.</p>
+        <div class="project-tags">
+          <span>Manim</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>Python</span>
+        </div>
+        <a href="maths/index.html" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Project Two</h3>
+        <p>Brief description of another project you've built. What problem does it solve? What technologies did you use?</p>
+        <div class="project-tags">
+          <span>Tag</span>
+          <span>Tag</span>
+          <span>Tag</span>
+        </div>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-card reveal reveal-delay-3">
+        <div class="project-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Project Three</h3>
+        <p>Brief description of another project you've built. What problem does it solve? What technologies did you use?</p>
+        <div class="project-tags">
+          <span>Tag</span>
+          <span>Tag</span>
+          <span>Tag</span>
+        </div>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <div class="reveal">
+      <p class="section-label">Skills</p>
+      <h2 class="section-title">Tech I work with</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-item reveal reveal-delay-1">
+        <span class="skill-icon">🐍</span>
+        <span class="skill-name">Python</span>
+      </div>
+      <div class="skill-item reveal reveal-delay-1">
+        <span class="skill-icon">🌐</span>
+        <span class="skill-name">HTML/CSS</span>
+      </div>
+      <div class="skill-item reveal reveal-delay-2">
+        <span class="skill-icon">⚡</span>
+        <span class="skill-name">JavaScript</span>
+      </div>
+      <div class="skill-item reveal reveal-delay-2">
+        <span class="skill-icon">🎨</span>
+        <span class="skill-name">Manim</span>
+      </div>
+      <div class="skill-item reveal reveal-delay-3">
+        <span class="skill-icon">🔧</span>
+        <span class="skill-name">Git</span>
+      </div>
+      <div class="skill-item reveal reveal-delay-3">
+        <span class="skill-icon">📐</span>
+        <span class="skill-name">LaTeX</span>
+      </div>
+      <div class="skill-item reveal reveal-delay-4">
+        <span class="skill-icon">🤖</span>
+        <span class="skill-name">AI/ML</span>
+      </div>
+      <div class="skill-item reveal reveal-delay-4">
+        <span class="skill-icon">🗄️</span>
+        <span class="skill-name">SQL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="reveal">
+      <p class="section-label">Contact</p>
+      <h2 class="section-title">Let's work together</h2>
+    </div>
+    <div class="contact-links reveal reveal-delay-1">
+      <a href="https://github.com/RD-44" class="contact-link" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        GitHub
+      </a>
+      <a href="mailto:aadhavan.mamallan@gmail.com" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        Email
+      </a>
+      <a href="https://www.linkedin.com/in/aadhavan2004/" class="contact-link" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Built with <a href="https://github.com/anomalyco/opencode" target="_blank" rel="noopener">opencode</a> (big-pickle) &middot; RD-44 &middot; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8250102780835705"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
