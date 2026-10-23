@@ -1,0 +1,37 @@
+---
+layout: default
+title: Tags
+---
+
+  <section class="blog-section">
+    <div class="reveal visible">
+      <p class="section-label">Blog</p>
+      <h2 class="section-title">Browse by tag</h2>
+      <a href="{{ '/blog/' | relative_url }}" class="post-back">← Back to blog</a>
+    </div>
+
+    {% if site.tags.size == 0 %}
+    <p class="blog-empty">No tags yet.</p>
+    {% endif %}
+
+    {% for tag in site.tags %}
+    <div class="blog-year reveal visible">
+      <h3 class="blog-year-label" id="{{ tag[0] | downcase | replace: ' ', '-' }}">{{ tag[0] }}</h3>
+      <div class="post-list">
+        {% for post in tag[1] %}
+        <a href="{{ post.url | relative_url }}" class="post-card">
+          <div class="post-card-body">
+            <h3 class="post-card-title">{{ post.title }}</h3>
+            {% if post.description or post.excerpt %}
+            <p class="post-card-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 160 }}</p>
+            {% endif %}
+          </div>
+          <div class="post-card-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </section>

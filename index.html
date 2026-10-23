@@ -1,41 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RD-44 | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8250102780835705"
-    crossorigin="anonymous"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WB78C8JP0X"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-WB78C8JP0X');
-  </script>
-</head>
-
-<body>
-
-
-  <div class="grid-bg"></div>
-  <div class="cursor-glow" id="cursorGlow"></div>
-
-  <!-- Nav -->
-  <nav class="nav" id="nav">
-    <a href="#" class="nav-logo">RD-<span>44</span></a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+---
+layout: default
+---
 
   <!-- Hero -->
   <section class="hero" id="hero">
@@ -60,7 +25,7 @@
     </div>
     <div class="about-grid">
       <div class="about-image reveal reveal-delay-1">
-        <img src="assets/profile.jpeg" alt="Profile photo">
+        <img src="{{ '/assets/profile.jpeg' | relative_url }}" alt="Profile photo">
       </div>
       <div class="about-text reveal reveal-delay-2">
         <p>I'm a developer and creator with a passion for building things that live on the internet. I enjoy working across the full stack, from crafting intuitive interfaces to designing robust backends.</p>
@@ -200,16 +165,3 @@
       </a>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>Built with <a href="https://github.com/anomalyco/opencode" target="_blank" rel="noopener">opencode</a> (big-pickle) &middot; RD-44 &middot; 2025</p>
-  </footer>
-
-  <script src="script.js"></script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8250102780835705"
-    crossorigin="anonymous"></script>
-
-</body>
-
-</html>

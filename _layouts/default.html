@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | RD-44{% else %}RD-44 | Portfolio{% endif %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="{{ '/style.css' | relative_url }}" rel="stylesheet">
+  {% feed_meta %}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8250102780835705"
+    crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WB78C8JP0X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WB78C8JP0X');
+  </script>
+  {% if page.mathjax %}
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  {% endif %}
+</head>
+
+<body>
+
+  <div class="grid-bg"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <a href="{{ '/' | relative_url }}" class="nav-logo">RD-<span>44</span></a>
+    <ul class="nav-links">
+      <li><a href="{{ '/' | relative_url }}#about">About</a></li>
+      <li><a href="{{ '/' | relative_url }}#projects">Projects</a></li>
+      <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+      <li><a href="{{ '/' | relative_url }}#skills">Skills</a></li>
+      <li><a href="{{ '/' | relative_url }}#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  {{ content }}
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Built with <a href="https://github.com/anomalyco/opencode" target="_blank" rel="noopener">opencode</a> (big-pickle) &middot; RD-44 &middot; 2025</p>
+  </footer>
+
+  <script src="{{ '/script.js' | relative_url }}"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8250102780835705"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

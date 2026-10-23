@@ -1,0 +1,33 @@
+title: RD-44
+description: Portfolio and blog of Ardi — developer, creator, and maths enthusiast
+url: https://rd-44.github.io
+baseurl: ""
+
+author:
+  name: Ardi
+  email: aadhavan.mamallan@gmail.com
+
+permalink: /blog/:title/
+
+plugins:
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      mathjax: true
+
+exclude:
+  - README.md
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+kramdown:
+  input: GFM
+  math_engine: mathjax
+
+exclude_from_local_builds: false
