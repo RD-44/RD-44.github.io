@@ -1,6 +1,6 @@
 /* ===== Typing effect ===== */
 var typedEl = document.getElementById('typed');
-var phrases = ['interactive websites', 'math animations', 'creative projects', 'cool things'];
+var phrases = ['build cool stuff', 'am figuring out what to do with my life', 'am looking for a cool job'];
 var phraseIdx = 0;
 var charIdx = 0;
 var isDeleting = false;
